@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <link rel="stylesheet" href="/manager/static/css/appointment_sch.css">
+  <link rel="icon" href="images/building-place-hospital-png.webp" style="height: 70px; width: 70px;">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>QuickCure Manager HMS</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <img src="images/building-place-hospital-png.webp" alt="logo" style="height: auto; width: 70px;">
+    <div class="container-fluid">
+
+      <h1>QuickCure Manager HMS</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/manager/templates/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/manager/templates/auth/login.html">User-info</a></li>
+            <li><a class="dropdown-item" href="/manager/templates/auth/signup.html">Inbox</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/manager/templates/index.html">logout</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <section id="patient-section">
+    
+    <div class="container-appointment">
+      <h2 style="color: white; text-align: center;">Patient Appointment <br> Form</h2>
+      <form>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname">
+        <label for="firstname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+        <label for="doctor">Department Name:</label>
+        <select id="department" name="department">
+          <option value="select-dept">Select dept.</option>
+          <option value="Cardiology">Cardiology</option>
+          <option value="ENT specialists">ENT specialists</option>
+          <option value="Dentistry">Dentistry</option>
+          <option value="Blood Screening">Blood Screening</option>
+          <option value="Pediatrics">Pediatrics</option>
+        </select>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label for="phone">Phone No:</label>
+        <input type="phone" id="phone1" name="phone">
+        <label for="reason">Reason for Appointment:</label>
+        <textarea id="reason" name="reason" rows="4"></textarea>
+
+        <button type="button" name="send" onclick="window.location.href='/manager/templates/doctor.html';">Send</button>
+      </form>
+
+    </div>
+  </section>
+  <section id="section-about">
+    <div class="header-about">
+      <h1>About QuickCure Manager</h1>
+    </div>
+    <div class="container-b">
+      <h2>Our Mission</h2>
+      <p>QuickCure Manager is dedicated to providing efficient and effective hospital management solutions to streamline healthcare operations.</p>
+      
+      <h2>Our Team</h2>
+      <p>Our team consists of experienced professionals in healthcare management, software development, and customer support to ensure the success of our clients.</p>
+      
+      <h2>Our Vision</h2>
+      <p>Our vision is to revolutionize the healthcare industry by offering innovative and user-friendly software solutions that enhance patient care and optimize hospital workflows.</p>
+      
+      <img src="images/about-image.jpg" alt="Hospital Image">
+    </div>
+  <footer class="footer py-1">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Connect With Us</h5>
+          <a href="mailto:your.email@gmail.com"><i class="fab fa-google"></i> Gmail |</a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter |</a>
+          <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Newsletter</h5>
+          <p>Subscribe to our newsletter for updates</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email"
+                aria-describedby="button-addon2">
+              <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h5>Evergreen-hospital</h5>
+          <p>No. 70, Allen Ikeja lagos, Nigeria</p>
+          <p>&copy; 2024 All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
