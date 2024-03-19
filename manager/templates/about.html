@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <link rel="stylesheet" href="/manager/static/css/about.css">
+    <link rel="icon" href="images/building-place-hospital-png.webp" style="height: 70px; width: 70px;">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>QuickCure Manager HMS</title>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg">
+        <img src="images/building-place-hospital-png.webp" alt="logo" style="height: auto; width: 70px;">
+      <div class="container-fluid">
+      
+      <h1>QuickCure Manager HMS</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="manager/templates/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Getting started
+                </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/manager/templates/auth/login.html">Sign in</a></li>
+              <li><a class="dropdown-item" href="/manager/templates/auth/signup.html">Sign up</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#tm-section-6" class="nav-link">Contact</a>
+          </li>
+        <!-- </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <section id="showcase">
+    <div class="container">
+      <h1>Making Healthcare <br> Better Together</h1>
+      <div class="box">
+          <p>Welcome to our online platform. A hospital management system <br>streamlines operations, enhances patient care, and boosts efficiency. <br>Invest in one to optimize your healthcare facility today.!
+          </p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title" style="justify-content: center; text-align: center;">Our Medical Services</h2>
+      <p class="section-tagline" style="justify-content: center; text-align: center;">We Care About Your Health</p>
+    </header>
+  </div>
+  <div class="service">
+      <img src="images/equipment-3089883_1280.jpg" alt="Cardiology">
+      <h2>Cardiology</h2>
+      <p style="margin-left: 20px;">Cardiology is the branch of medicine that deals with disorders of the heart as well a <br> some parts of the circulatory system.</p>
+  </div>
+  <div class="service">
+      <img src="images/bethesda-naval-medical-center-80636_1280.jpg" alt="ENT specialists">
+      <h2>ENT specialists</h2>
+      <p style="margin-left: 20px;">ENT specialists are medical doctors who specialize in the diagnosis and treatment of <br>disorders related to the ear, nose, and throat.</p>
+  </div>
+  <div class="service">
+      <img src="images/dentist-5120920_1280.jpg" alt="Dentistry">
+      <h2>Dentistry</h2>
+      <p style="margin-left: 20px;">Dentistry is the branch of medicine that is involved in the study, diagnosis, prevention,<br> and treatment of diseases, disorders, and conditions of the oral cavity.</p>
+  </div>
+  <div class="service">
+      <img src="images/blood-bags-91170_1280.jpg" alt="Blood Screening">
+      <h2>Blood Screening</h2>
+      <p style="margin-left: 20px;">Blood screening involves testing a sample of blood to detect various conditions such as <br> infections, diseases, and abnormalities.</p>
+  </div>
+  <div class="service">
+      <img src="images/baby-210194_1280.jpg" alt="Pediatrics">
+      <h2>Pediatrics</h2>
+      <p style="margin-left: 20px;">Pediatrics is the branch of medicine that focuses on the health and well-being of infants,<br> children, and adolescents. Our pediatric specialists provide compassionate care and <br>support for your child's unique needs, ensuring they thrive and grow into healthy adults.</p>
+  </div>
+</section>
+<section id="section-about">
+<div class="header-about">
+  <h1>About QuickCure Manager</h1>
+</div>
+<div class="container-b">
+  <h2>Our Mission</h2>
+  <p>QuickCure Manager is dedicated to providing efficient and effective hospital management solutions to streamline healthcare operations.</p>
+  
+  <h2>Our Team</h2>
+  <p>Our team consists of experienced professionals in healthcare management, software development, and customer support to ensure the success of our clients.</p>
+  
+  <h2>Our Vision</h2>
+  <p>Our vision is to revolutionize the healthcare industry by offering innovative and user-friendly software solutions that enhance patient care and optimize hospital workflows.</p>
+  
+  <img src="images/about-image.jpg" alt="Hospital Image">
+</div>
+</section>
+
+<section class="tm-section-6" id="tm-section-6" style="padding-top: 30px; background-color:lightgray; border-top: 1px solid lightgoldenrodyellow;">
+  <div class="row">
+      <div class="col-lg-7 col-md-7 col-xs-12">
+          <div class="contact_message">
+              <form action="" method="post" class="contact-form">
+                  <div class="row mb-2">
+                      <div class="form-group col-xl-6">
+                          <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required/>
+                      </div>
+                      <div class="form-group col-xl-6 pl-xl-1">
+                          <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                  </div>
+                  <button type="submit" class="btn  tm-btn-submit float-right btn-big">Send It Now</button>
+              </form>
+          </div>
+      </div>
+
+      <div class="col-lg-5 col-md-5 col-xs-12 tm-contact-right">
+          <div class="tm-address-box">
+              <h2 class="mb-4">Contact Us</h2>
+              <p class="mb-5">Integer pretium volutpat tempor. Maecenas condimentum tincidunt leo. Paesent scelerisque erat placerat tempus laoreet. Vivamus pellentesque tempor congue.</p>
+              <address>
+                  120-240 Proin mauris enim,
+                  <br> dignissim sit amet ligula id,
+                  <br> finibus tempus erat 10200
+              </address>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer class="footer py-1">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>Connect With Us</h5>
+              <a href="mailto:your.email@gmail.com"><i class="fab fa-google"></i> Gmail |</a>
+              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter |</a>
+              <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+          </div>
+          <div class="col-md-4">
+            <h5>Newsletter</h5>
+            <p>Subscribe to our newsletter for updates</p>
+            <form>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                </div>
+            </form>
+        </div>
+          <div class="col-md-4">
+              <h5>Evergreen-hospital</h5>
+              <p>No. 70, Allen Ikeja lagos, Nigeria</p>
+              <p>&copy; 2024 All Rights Reserved</p>
+          </div>
+      </div>
+  </div>
+</footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
