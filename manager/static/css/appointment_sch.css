@@ -1,0 +1,241 @@
+/* Define root variables of element */
+:root {
+    --container-fluid-bg:rgb(41, 240, 240);
+    --container-fluid-h1-txt-color: 23px
+}
+/* image logo */
+.navbar img {
+    padding-bottom: 29px;
+    margin-left: 30px;
+}
+.container-fluid {
+    padding-top: 0;
+ 
+}
+a:hover {
+    transition: 0.7s;
+    color: #fff;
+}
+
+.container-fluid h1{
+    font-size: var(--container-fluid-h1-txt-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-right: 12%;
+    font-size: 22px;
+    color: rgb(56, 29, 150);    /* Changing the text color of my header*/
+}
+/* Making the background color of the header section to fit without margin */
+.navbar,.container-fluid{
+    background-color: var(--container-fluid-bg);
+    font-size: 20px;
+}
+/* changing the background color and border-radius of the unordered list item */
+ .navbar-nav a:hover{
+    color: #fff !important;
+    background: linear-gradient(0, #2e3192, #1bffff);
+    border-radius: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+ .dropdown-item, a {
+    background-color: #b2b3c5; /* Change background color on hover */
+    padding: 10px 0;
+    font-size: 20px;
+}  
+
+.collapse .nav-item {
+    margin-left: 20px;
+
+}
+.navbar-nav .nav-link {
+    font-size: 16px;
+    margin-left: 15px;
+    /* font-weight: 25px; */
+}
+.dropdown-menu .dropdown-item {
+    background-color: #fff;
+    font-size: 15px;
+}
+.navbar-nav {
+    margin-left: 10em;
+}
+#showcase {
+    position: relative;
+    background-image: url('/manager/templates/images/realdoctor.jpg');
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* This sets the height of the section to be the full height of the viewport */
+    color: white; /* Set text color to white for better visibility */
+    text-align: center; /* Center align text */
+    padding: 50px; /* Add some padding for better readability */
+}
+#showcase h1 {
+    position: relative;
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+}
+#showcase p {
+    position:relative;
+    color:#fff;
+    font-weight: bolder;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+
+footer {
+    background-color: #787bc4;
+    color: white;
+    height: 140px;
+    margin-bottom: 40px;
+}
+.footer a {
+    text-decoration: none;
+    background-color: #787bc4;
+    color: white;
+}
+.box p {
+    font-size: 16px;
+    opacity: 1;
+    font-size: 16px;
+
+}
+#appointment {
+    background-image: url('images/appointment-image.jpg');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+    display: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.appointment-box {
+    color: #fff;
+    justify-content: center;
+}
+.appointment-box h1 {
+    padding-top: 8%;
+    font-size: 50px;
+    text-align: center;
+}
+.appointment-box p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(37, 36, 36,0.3);
+    width:80% auto;
+    border-radius: 20%;
+}
+
+.book-appointment-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container-appointment {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.container-appointment {
+    background-image: url('/manager/templates/images/sea-3652697_1280.jpg');
+    border-radius: 20px;
+}
+.container-appointment form {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* #appbk {
+    background-image: url(images/sea-3652697_1280.jpg);
+ } */
+ /* Appointmmenr form background picture */
+#patient-section {
+    background-image: url('/manager/templates/images/bgd-pic.jpg');
+    padding-bottom: 10px;
+    background-image: cover;
+    background-position:center;
+
+}
+#patient-section h1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+.header-about h1{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+#section-about {
+    background-color: lightgrey;
+    padding-bottom: 20px;
+}
+.container-b {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.container-appointment{
+    width: 50%
+
+}
