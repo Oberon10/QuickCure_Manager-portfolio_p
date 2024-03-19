@@ -1,0 +1,1 @@
+<button class="book-appointment-btn" onclick="window.location.href='appointment.html';">Book an Appointment</button>
