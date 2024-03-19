@@ -1,0 +1,140 @@
+/* Define root variables of element */
+:root {
+    --container-fluid-bg:rgb(41, 240, 240);
+    --container-fluid-h1-txt-color: 23px
+}
+/* image logo */
+.navbar img {
+    padding-bottom: 29px;
+    margin-left: 30px;
+}
+.container-fluid {
+    padding-top: 0;
+  
+}
+a:hover {
+    transition: 0.7s;
+    color: #fff;
+}
+
+.container-fluid h1{
+    font-size: var(--container-fluid-h1-txt-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-right: 12%;
+    font-size: 22px;
+    color: rgb(56, 29, 150);    /* Changing the text color of my header*/
+}
+/* Making the background color of the header section to fit without margin */
+.navbar,.container-fluid{
+    background-color: var(--container-fluid-bg);
+    font-size: 20px;
+}
+/* changing the background color and border-radius of the unordered list item */
+ .navbar-nav a:hover{
+    color: #fff !important;
+    background: linear-gradient(0, #2e3192, #1bffff);
+    border-radius: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+ .dropdown-item, a {
+    background-color: #b2b3c5; /* Change background color on hover */
+    padding: 10px 0;
+    font-size: 20px;
+}  
+.navbar-nav .nav-link {
+    font-size: 16px;
+    margin-left: 15px;
+    /* font-weight: 25px; */
+}
+.dropdown-menu .dropdown-item {
+    background-color: #fff;
+    font-size: 15px;
+}
+.navbar-nav {
+    margin-left: 10em;
+}
+
+/* Style for login form */
+
+.book-appointment-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.service img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 80%;
+    margin-right: 20px;
+}
+#services {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    background-color:lightgray;
+    padding-left: 6%;
+
+}
+#showcase {
+    background-image: url('/manager/templates/images/about-image.jpg');
+    height: 100vh;
+}
+#showcase h1 {
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+  .input-field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    transition: .4s
+  }
+.footer {
+    background-color: #787bc4;
+    color: white;
+    height: 140px;
+}
+.footer a {
+    text-decoration: none;
+    background-color: #787bc4;
+    color: white;
+}
+.container-k {
+    width: 35%;
+    margin-left: 30%;
+    background-image: url('/manager/templates/images/dentist-5120920_1280.jpg');
+    background-image: cover;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+.container-k header {
+    font-size: 31px;
+    font-weight: bold;
+}
+#signup-page {
+    background-image: url('/manager/templates/images/signup-image.jpg');
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
