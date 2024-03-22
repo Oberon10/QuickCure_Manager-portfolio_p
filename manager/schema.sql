@@ -41,6 +41,5 @@ CREATE TABLE appointments (
     reason TEXT NOT NULL,
     symptoms TEXT NOT NULL,
     status TEXT DEFAULT 'Pending',
-    FOREIGN KEY (patient_name) REFERENCES registered_patient(first_name, last_name),
     FOREIGN KEY (patient_id) REFERENCES registered_patient(id)
 );
