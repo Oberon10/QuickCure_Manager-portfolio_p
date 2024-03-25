@@ -1,24 +1,21 @@
-DROP TABLE IF EXISTS registered_patient;
-DROP TABLE IF EXISTS registered_staff;
+DROP TABLE IF EXISTS patient;
+DROP TABLE IF EXISTS doctor;
 DROP TABLE IF EXISTS appointments;
 
 
-CREATE TABLE registered_patient (
+CREATE TABLE patient (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
-    password TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL,
-    phone_number TEXT NOT NULL,
+    password TEXT NOT NULL,
+    phone_number TEXT UNIQUE NOT NULL,
     gender TEXT NOT NULL,
     age INTEGER NOT NULL,
-    blood_group TEXT NOT NULL,
-    country TEXT NOT NULL,
-    state TEXT NOT NULL,
-    home_address TEXT NOT NULL
+    blood_group TEXT NOT NULL
 );
 
-CREATE TABLE registered_staff (
+CREATE TABLE doctor (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     email TEXT UNIQUE,
