@@ -88,7 +88,7 @@ def login():
         if error is None:
             session.clear()
             session['patient_id'] = patient['id']
-            return redirect(url_for('appointment_sch'))
+            return redirect(url_for('auth.appointment'))
 
         flash(error)
 
@@ -107,7 +107,7 @@ def load_logged_in_user():
         ).fetchone()
 
 
-@bp.route('/logout')
+@bp.route('/index')
 def logout():
     session.clear()
     return redirect(url_for('index'))
@@ -123,7 +123,7 @@ def login_required(view):
 
     return wrapped_view
 
-@bp.route('/appointment_sch')
-def appointment_sch():
+@bp.route('/appointment')
+def appointment():
     session.clear()
-    return redirect(url_for('auth.appointment_sch'))
+    return render_template('auth/appointment.html')
