@@ -18,4 +18,4 @@ This system aims to simplify patient and staff management, appointment schedulin
     + [Benard Prosper](#Benard-Prosper)
     + [Saint Alaye](#Saint-Alaye)
     + [Eche Ngbede James](#Eche-Ngbede-James)
-    + [Iwegbu Vivian Nwakaego](#Iwegbu-Vivian-Nwakaego)
+    + [Iwegbu Vivian Nwakaego](#Vivian-Nwakaego-Iwegbu)
