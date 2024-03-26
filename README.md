@@ -13,4 +13,9 @@ This system aims to simplify patient and staff management, appointment schedulin
     + [Frontend: HTML, CSS, JavaScript, Bootstrap.](#frontend:-html,-css,-javascript,-bootstrap.)
     + [Backend: Flask](#backend:-flask)
     + [Database: Sqlite3](#database:-sqlite3)
-- [Documentation: Coming soon](#documentation:-coming-soon)
+
+- [Contributors](#Contributors)
+    + [Benard Prosper](#Benard-Prosper)
+    + [Saint Alaye](#Saint-Alaye)
+    + [Eche Ngbede James](#Eche-Ngbede-James)
+    + [Iwegbu Vivian Nwakaego](#Iwegbu-Vivian-Nwakaego)

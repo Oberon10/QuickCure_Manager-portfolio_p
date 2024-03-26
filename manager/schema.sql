@@ -18,10 +18,10 @@ CREATE TABLE patient (
 CREATE TABLE doctor (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
-    email TEXT UNIQUE,
     phone_number TEXT,
-    gender TEXT,
+    email TEXT UNIQUE,
     password TEXT,
+    gender TEXT,
     qualification TEXT,
     specialization TEXT,
     registration_number TEXT
