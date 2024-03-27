@@ -55,7 +55,7 @@ def register():
         if error is None:
             try:
                 db.execute(
-                    "INSERT INTO patient (first_name, last_name, email, password, phone_number, gender, age, blood_group, country, state, home_address) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    "INSERT INTO patient (first_name, last_name, email, password, phone_number, age, blood_group) VALUES ( ?, ?, ?, ?, ?, ?, ?)",
                     (first_name, last_name, email, generate_password_hash(password), phone_number, age, blood_group,),
                 )
                 db.commit()
